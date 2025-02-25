@@ -1,0 +1,17 @@
+{
+    "tasks": {
+        "dev": "deno run --watch main.ts",
+        "complex-ico": "deno compile --icon ./icons/complex/icon.ico --target x86_64-pc-windows-msvc --output ./output/ico-complex.exe main.ts",
+        "complex-bmp": "deno compile --icon ./icons/complex/icon.bmp --target x86_64-pc-windows-msvc --output ./output/bmp-complex.exe main.ts",
+        "basic-ico": "deno compile --icon ./icons/basic/icon.ico --target x86_64-pc-windows-msvc --output ./output/ico-basic.exe main.ts",
+        "basic-bmp": "deno compile --icon ./icons/basic/icon.bmp --target x86_64-pc-windows-msvc --output ./output/bmp-basic.exe main.ts"
+    },
+    "imports": {},
+    "compilerOptions": {
+        "lib": [
+            "ES2015",
+            "deno.ns",
+            "dom"
+        ]
+    }
+}
